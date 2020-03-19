@@ -1,0 +1,113 @@
+:root {
+    --main-bg-color: #38b500;
+    --shadow-color: #aaa;
+    --main-font-color: #666;
+    --alter-font-color: #fff;
+}
+
+html, body {
+	padding-bottom: 50px;
+	font-family: Comic Sans MS, Comic Sans, cursive !important;
+    color: var(--alter-font-color) !important;
+}
+
+:focus {
+    outline: none !important;
+}
+
+a {
+    text-decoration: none;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+a.btn-link {
+    text-decoration: none;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    color: var(--main-font-color) !important;
+}
+
+a.btn-link:hover {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+	outline: none;
+}
+
+img {
+    color: var(--alter-font-color) !important;
+}
+
+.navbar-brand {
+    font-size: 1em;
+    transform: rotate(-7deg);
+    -webkit-transform: rotate(-7deg);
+    -ms-transform: rotate(-7deg);
+}
+
+.navbar {
+    -webkit-box-shadow: 3px 3px 3px 3px var(--shadow-color) !important;
+    -moz-box-shadow: 3px 3px 3px 3px var(--shadow-color) !important;
+    box-shadow: 3px 3px 3px 3px var(--shadow-color) !important;
+}
+
+.navbar.navbar-dark .breadcrumb .nav-item .nav-link, .navbar.navbar-dark .navbar-nav .nav-item .nav-link:hover {
+    color: #fff;
+    -webkit-transition: .35s;
+    transition: .35s;
+}
+
+footer {
+    -webkit-box-shadow: -3px -3px 3px 3px var(--shadow-color) !important;
+    -moz-box-shadow: -3px -3px 3px 3px var(--shadow-color) !important;
+    box-shadow: -3px -3px 3px 3px var(--shadow-color) !important;
+}
+
+.default-color {
+    background-color: var(--main-bg-color) !important;
+}
+
+input,
+textarea,
+input:active,
+textarea:active {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--main-bg-color) !important;
+}
+
+label {
+  	color: var(--main-font-color) !important;
+}
+
+.fa,
+.prefix {
+  	color: var(--main-bg-color) !important;
+}
+
+.btn-outline-grey,
+.btn-outline-grey:hover,
+.btn-outline-grey:active,
+.btn-outline-grey:focus,
+.btn-outline-grey:visited {
+	border: 2px solid var(--main-bg-color) !important;
+	background-color: transparent !important;
+	color: var(--main-font-color) !important;
+}
+
+.pagination li {
+    display:table;
+    margin: 0px auto 0px auto;
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--main-bg-color) !important;
+    color: var(--alter-font-color) !important;
+}
+
+.pagination .page-item .page-link {
+    color: var(--main-font-color) !important;
+}
