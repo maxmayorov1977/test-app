@@ -19,5 +19,5 @@ Route::get('car/{id}', 'CarController@show');
 Route::get('carCreate', 'CarController@create');
 Route::post('carStore', 'CarController@store');
 Route::get('carEdit/{id}', 'CarController@edit');
-Route::post('carUpdate/{id}', 'CarController@update');
-Route::get('carDelete/{id}', 'CarController@destroy');
+Route::put('carUpdate/{id}', 'CarController@update');
+Route::delete('carDelete/{id}', 'CarController@destroy');

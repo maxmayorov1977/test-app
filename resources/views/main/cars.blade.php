@@ -22,7 +22,7 @@
                     <td>{{ $car->year_release }}</td>
                     <td>{{ $car->horse_power }} л.с.</td>
                     <th>{{ $car->transmission->type }}</th>
-                    <th><a href="{{ url("/car/{$car->id}") }}"><i class="fas fa-eye"></i></a> <a href="{{ url("/carEdit/{$car->id}") }}"><i class="fas fa-pen"></i></a> <a href="{{ url("/carDelete/{$car->id}") }}"><i class="fas fa-trash"></i></a></th>
+                    <th><a href="{{ url("/car/{$car->id}") }}"><i class="fas fa-eye"></i></a> <a href="{{ url("/carEdit/{$car->id}") }}"><i class="fas fa-pen"></i></a> <form action="{{ url('/carDelete', ['id' => $car['id']]) }}" method="post"><button><i class="fas fa-trash"></i></button><input type="hidden" name="_method" value="delete" /><input type="hidden" name="_token" value="{{ csrf_token() }}"></form></th>
                 </tr>
             @endforeach
         </tbody>
