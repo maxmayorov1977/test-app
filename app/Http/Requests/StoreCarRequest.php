@@ -15,7 +15,7 @@ class StoreCarRequest extends FormRequest
     {
         return [
             'vendor_id' => 'required',
-            'model_name' => 'required|string|min:2|max:20',
+            'model_name' => 'required|string|min:2|max:30',
             'year_release' => 'required',
             'horse_power' => 'required',
             'transmission_id' => 'required',
