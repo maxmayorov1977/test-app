@@ -45,7 +45,7 @@ class CarController extends Controller
         $car->horse_power = intval($request->horse_power);
         $car->transmission_id = intval($request->transmission_id);
         $car->save();
-        return back()->with('status', 'Продукт сохранён.');
+        return redirect('/')->with('status', 'Продукт сохранён.');
     }
 
     public function edit(Request $request)
